@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Frame settings */
+.frame {
+  max-width: 90%;
+  min-width: 35%;
+  border: 5px solid darkslategray;
+  border-radius: 5px;
+}
+
+.calc-title {
+  /* border: 3px solid red; */
+  height: 3rem;
+  border-bottom: 3px solid gray;
+}
+
+.display-aux {
+  display: flex;
+  height: 2.5rem;
+  font-size: calc(10px + 1vmin);
+  /* border: 1px solid wheat; */
+}
+
+.memory-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  /* border: 1px solid blue; */
+}
+
+.temp-data {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  /* border: 1px solid green; */
+  padding-right: 1rem;
+  font-weight: lighter;
+}
+
+.display {
+  /* border: 2px solid green; */
+  font-size: calc(10px + 3vmin);
+  background-color: aquamarine;
+  color: blue;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+
+.calc-grid {
+  width: 100%;
+  /* border: 3px solid blue; */
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.5rem;
+  grid-template-areas: 
+      "i01 i02 i03 i04 i05 i06"
+      "i01 i07 i08 i09 i10 i11"
+      "i12 i13 i14 i15 i16 i17"
+      "i18 i19 i20 i21 i16 i17"
+      "i22 i23 i24 i25 i26 i26"
+      ;
+}
+
+.button {
+  height: 100%;
+  border: 2px solid darkolivegreen;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: chartreuse;
+  color: black;
+}
+
+.ac {
+  grid-area: i01;
+  border: 2px solid green;
+  height: 100%;
+}
+
+.ms {
+  grid-area: i02;
+}
+
+.mc {
+  grid-area: i03;
+}
+
+.mr {
+  grid-area: i04;
+}
+
+.m-plus {
+  grid-area: i05;
+}
+
+.m-minus {
+  grid-area: i06;
+}
+
+.seven {
+  grid-area: i07;
+}
+
+.eight {
+  grid-area: i08;
+}
+
+.nine {
+  grid-area: i09;
+}
+
+.multiply {
+  grid-area: i10;
+}
+
+.divide {
+  grid-area: i11;
+}
+
+.c {
+  grid-area: i12;
+}
+
+.four {
+  grid-area: i13;
+}
+
+.five {
+  grid-area: i14;
+}
+
+.six {
+  grid-area: i15;
+}
+
+.add {
+  grid-area: i16;
+}
+
+.subtract {
+  grid-area: i17;
+}
+
+.sign {
+  grid-area: i18;
+}
+
+.one {
+  grid-area: i19;
+}
+
+.two {
+  grid-area: i20;
+}
+
+.three {
+  grid-area: i21;
+}
+
+.percente {
+  grid-area: i22;
+}
+
+.sqrt {
+  grid-area: i23;
+}
+
+.zero {
+  grid-area: i24;
+}
+
+.decimal {
+  grid-area: i25;
+}
+
+.equal {
+  grid-area: i26;
+}
+
+.ac {
+  background-color: lightgreen;
+  color: darkblue;
+
+}
+.c {
+  background-color: lightblue;
+  color: darkblue;
+}
+
+.zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+  background-color: gray;
+}
+
+.ms, .mc, .mr, .m-plus, .m-minus {
+  background-color: goldenrod;
+  color: darkgreen;
+}
+
+.multiply, .divide, .subtract, .add, .percent, .sign {
+  background-color: darkcyan;
+  color: darkorange;
+  font-weight: bold;
+}
+.equal {
+  background-color: blue;
+  color: black;
+  font-weight: bold;
+}
+
+.square-root, .decimal {
+  background-color: burlywood;
+  color: blue;
+  font-weight: bold;
+}
